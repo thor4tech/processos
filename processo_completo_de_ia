@@ -1,0 +1,945 @@
+# 🤖 PROCESSO COMPLETO DE IA DE ATENDIMENTO - CRIA™
+
+**Metodologia Proprietária Thor4Tech & CRIA™**  
+**Versão:** 2.0  
+**Data:** 29/09/2025  
+**Responsável:** Rafael Torquato & Cleiton
+
+---
+
+## 📋 ÍNDICE
+
+1. [Visão Geral](#visão-geral)
+2. [Modelos de Serviço](#modelos-de-serviço)
+3. [Processo de Implantação](#processo-de-implantação)
+4. [Estrutura de Agentes](#estrutura-de-agentes)
+5. [Cronogramas e Prazos](#cronogramas-e-prazos)
+6. [Manutenção Contínua](#manutenção-contínua)
+7. [KPIs e Métricas](#kpis-e-métricas)
+
+---
+
+## 🎯 VISÃO GERAL
+
+### O Que é o Serviço de IA de Atendimento CRIA™
+
+Sistema completo de **Inteligência Artificial Conversacional** para automatizar atendimento, vendas e suporte via WhatsApp, Instagram e outros canais, utilizando a plataforma NicoChat integrada com modelos de linguagem avançados.
+
+### Benefícios Para o Cliente
+
+```
+✅ Atendimento 24/7 sem aumentar equipe
+✅ Redução de 60-80% no tempo de resposta
+✅ Aumento de 30-50% na taxa de conversão
+✅ Escalabilidade sem limite de volume
+✅ Integração com CRM e sistemas externos
+✅ Dados e insights em tempo real
+```
+
+### Diferenciais CRIA™
+
+- **Agentes Especializados:** Múltiplos agentes para diferentes funções
+- **Enxame Inteligente:** Agentes trabalham em conjunto
+- **Banco de Conhecimento:** Base proprietária por cliente
+- **Integrações Nativas:** API, CRM, calendários, pagamentos
+- **Manutenção Inclusa:** 12 meses de suporte e otimização
+
+---
+
+## 💼 MODELOS DE SERVIÇO
+
+### 1. SENTINELA (IA Básica)
+
+**Ideal para:** Pequenos negócios iniciando automação
+
+**Inclui:**
+- ✅ Moderação de comentários (Instagram/Facebook)
+- ✅ Receptivo simples com base de conhecimento
+- ✅ 1 agente de atendimento
+- ✅ Até 1.000 interações/mês
+- ✅ Sem integração externa
+
+**Prazo de Implantação:** 3 dias úteis  
+**Investimento:** R$ 1.500/mês  
+**Setup:** R$ 997 (única vez)
+
+---
+
+### 2. GUARDIÃO (IA Intermediária)
+
+**Ideal para:** Negócios com volume médio
+
+**Inclui:**
+- ✅ Tudo do Sentinela
+- ✅ Moderação avançada
+- ✅ Receptivo integrado com API
+- ✅ CRM nativo (agendamentos + vendas)
+- ✅ 2-3 agentes especializados
+- ✅ Até 5.000 interações/mês
+- ✅ Base de conhecimento profunda
+
+**Prazo de Implantação:** 5 dias úteis  
+**Investimento:** R$ 2.500/mês  
+**Setup:** R$ 1.997 (única vez)
+
+---
+
+### 3. IA COMERCIAL 01 (IA Completa)
+
+**Ideal para:** Empresas com alta demanda
+
+**Inclui:**
+- ✅ Tudo do Guardião
+- ✅ 4-6 agentes especializados:
+  - Agente de Triagem
+  - Agente de Suporte
+  - Agente de Vendas/Agendamento
+  - Agente Social Selling
+  - Agente de Disparos
+  - Agente Extra (personalizado)
+- ✅ Integrações via API externa
+- ✅ CRM avançado com automações
+- ✅ Function calls customizadas
+- ✅ Até 20.000 interações/mês
+- ✅ Relatórios executivos
+
+**Prazo de Implantação:** 30-40 dias úteis  
+**Investimento:** R$ 5.000/mês  
+**Setup:** R$ 4.997 (única vez)
+
+---
+
+### 4. PLANO PREMIUM (Enxame Completo)
+
+**Ideal para:** Grandes operações
+
+**Inclui:**
+- ✅ Tudo da IA Comercial 01
+- ✅ Multiagentes ilimitados
+- ✅ Integração ERP/CRM/API completa
+- ✅ Atendimento 24/7
+- ✅ Interações ilimitadas
+- ✅ Orçamento customizado
+- ✅ Suporte prioritário
+- ✅ Consultoria estratégica inclusa
+
+**Prazo de Implantação:** 45-60 dias úteis  
+**Investimento:** Sob consulta (a partir de R$ 10.000/mês)  
+**Setup:** Sob consulta
+
+---
+
+## 🔄 PROCESSO DE IMPLANTAÇÃO
+
+### FASE 1: BRIEFING E COLETA (3-5 dias)
+
+#### 1.1 Formulário Detalhado
+
+**Dados da Empresa:**
+```
+☐ Razão social e CNPJ
+☐ Segmento de atuação
+☐ Tamanho da operação (faturamento, equipe)
+☐ Produtos e serviços principais
+☐ Ticket médio e volume de vendas
+☐ Público-alvo e personas
+```
+
+**Dados Operacionais:**
+```
+☐ Volume de atendimentos atual
+☐ Canais de atendimento utilizados
+☐ Ferramentas atuais (CRM, ERP, etc)
+☐ Processos de vendas e atendimento
+☐ Principais objeções dos clientes
+☐ Taxa de conversão atual
+```
+
+**Dados Técnicos:**
+```
+☐ Site e landing pages
+☐ Integração com sistemas
+☐ API disponíveis
+☐ Base de contatos existente
+☐ Histórico de conversas (se houver)
+```
+
+#### 1.2 Organização de Materiais
+
+**Estrutura no Drive:**
+```
+📁 [Cliente] - CRIA IA
+  ├─ 📁 01_Briefing
+  │   ├─ Formulário preenchido
+  │   ├─ Documentos da empresa
+  │   └─ Contrato assinado
+  │
+  ├─ 📁 02_Base_Conhecimento
+  │   ├─ Produtos e serviços
+  │   ├─ Preços e condições
+  │   ├─ FAQ
+  │   ├─ Scripts de atendimento
+  │   └─ Políticas da empresa
+  │
+  ├─ 📁 03_Contatos
+  │   ├─ Lista de clientes
+  │   ├─ Lista de leads
+  │   └─ Segmentação
+  │
+  ├─ 📁 04_Integrações
+  │   ├─ Acessos e credenciais
+  │   ├─ Documentação de APIs
+  │   └─ Fluxos de integração
+  │
+  └─ 📁 05_Prompts_Agentes
+      ├─ Agente Triagem
+      ├─ Agente Vendas
+      ├─ Agente Suporte
+      └─ Outros agentes
+```
+
+#### 1.3 Investigação Técnica
+
+```
+☐ Auditoria de canais de comunicação
+☐ Análise de histórico de conversas
+☐ Mapeamento de jornada do cliente
+☐ Identificação de pontos de fricção
+☐ Avaliação de integrações necessárias
+☐ Definição de casos de uso prioritários
+```
+
+---
+
+### FASE 2: PLANEJAMENTO ESTRATÉGICO (5-7 dias)
+
+#### 2.1 Mapeamento de Agentes
+
+Para cada agente, definir:
+
+**1. Personalidade e Objetivo**
+- Tom de voz
+- Estilo de comunicação
+- Objetivo principal
+- Limites de atuação
+
+**2. Habilidades**
+- O que pode fazer
+- O que não pode fazer
+- Quando escalar para humano
+
+**3. Prompt da Função**
+- Instruções detalhadas
+- Contexto do negócio
+- Regras de comportamento
+
+**4. Funções de IA (Function Calls)**
+- Consultar banco de dados
+- Agendar compromissos
+- Processar pagamentos
+- Criar tickets
+- Outros
+
+**5. Informações sobre Produtos/Serviços**
+- Catálogo completo
+- Preços e condições
+- Disponibilidade
+- Diferencias
+
+**6. Restrições**
+- Temas proibidos
+- Informações confidenciais
+- Limites de autonomia
+
+**7. Banco de Conhecimento**
+- Documentos de referência
+- FAQs especializados
+- Cases de uso
+- Prompts auxiliares
+
+#### 2.2 Tipos de Agentes Padrão
+
+**AGENTE 1: Triagem (Recepcionista Virtual)**
+```
+Objetivo: Identificar intenção e direcionar
+Habilidades:
+  - Qualificar leads
+  - Coletar informações iniciais
+  - Direcionar para agente especializado
+  - Responder perguntas básicas
+Escala para: Agente especializado ou humano
+```
+
+**AGENTE 2: Vendas/Agendamento**
+```
+Objetivo: Converter leads em clientes
+Habilidades:
+  - Apresentar produtos/serviços
+  - Responder objeções
+  - Processar pedidos
+  - Agendar visitas/reuniões
+  - Integrar com CRM/calendário
+Escala para: Vendedor humano (negociações complexas)
+```
+
+**AGENTE 3: Suporte Técnico**
+```
+Objetivo: Resolver problemas de clientes
+Habilidades:
+  - Troubleshooting guiado
+  - Consultar base de conhecimento
+  - Criar tickets de suporte
+  - Escalar para nível 2
+Escala para: Suporte humano (casos complexos)
+```
+
+**AGENTE 4: Social Seller**
+```
+Objetivo: Engajar e nutrir relacionamentos
+Habilidades:
+  - Responder DMs e comentários
+  - Compartilhar conteúdo relevante
+  - Identificar oportunidades de venda
+  - Manter engajamento
+Escala para: Vendedor ou SAC
+```
+
+**AGENTE 5: Disparos e Receptivo**
+```
+Objetivo: Ativar base e receber respostas
+Habilidades:
+  - Enviar mensagens em massa
+  - Processar respostas
+  - Segmentar público
+  - Follow-up automatizado
+Escala para: Agentes especializados
+```
+
+**AGENTE 6: Oráculo Empresarial (Premium)**
+```
+Objetivo: Inteligência e análise de negócios
+Habilidades:
+  - Análise de dados
+  - Relatórios executivos
+  - Previsões e insights
+  - Suporte à tomada de decisão
+Escala para: Gestor/CEO
+```
+
+#### 2.3 Desenho do Funil
+
+**Estrutura do Fluxo:**
+```
+ENTRADA
+  ↓
+TRIAGEM (Agente 1)
+  ↓
+┌─────────┬─────────┬─────────┐
+↓         ↓         ↓         ↓
+VENDAS  SUPORTE  SOCIAL  OUTROS
+(Ag. 2)  (Ag. 3)  (Ag. 4)  (Ag. 5)
+  ↓         ↓         ↓         ↓
+HUMANO (quando necessário)
+```
+
+#### 2.4 Lógica do Enxame
+
+**Princípios:**
+- Cada agente tem especialização
+- Handoff inteligente entre agentes
+- Contexto preservado na transição
+- Humano no loop quando necessário
+- Aprendizado contínuo
+
+---
+
+### FASE 3: IMPLANTAÇÃO TÉCNICA (10-20 dias)
+
+#### 3.1 Setup no NicoChat
+
+**Etapa 1: Instalação WhatsApp Business Meta**
+```
+☐ Criar conta Meta Business Manager
+☐ Configurar número de telefone
+☐ Verificar número
+☐ Conectar API oficial
+☐ Configurar webhooks
+☐ Testar envio e recebimento
+```
+
+**Etapa 2: Criação do MainFlow**
+```
+☐ Fluxo de entrada (boas-vindas)
+☐ Captura de nome e dados básicos
+☐ Menu de opções ou triagem automática
+☐ Direcionamentos para subfluxos
+☐ Fallback (quando não entende)
+```
+
+**Etapa 3: Criação dos Blocos de Agente**
+```
+Para cada agente:
+  ☐ Criar bloco com OpenAI API
+  ☐ Configurar prompt completo
+  ☐ Definir function calls
+  ☐ Adicionar banco de conhecimento
+  ☐ Configurar variáveis e campos
+  ☐ Testar isoladamente
+```
+
+**Etapa 4: Fluxos de Disparos e Follow-up**
+```
+☐ Segmentação de público
+☐ Templates de mensagem aprovados
+☐ Agendamento de disparos
+☐ Automação de follow-up
+☐ Monitoramento de respostas
+```
+
+**Etapa 5: Subfluxos e Direcionamentos**
+```
+☐ Subfluxo por produto/serviço
+☐ Subfluxo de objeções
+☐ Subfluxo de escalação
+☐ Subfluxo de finalização
+☐ Conexões lógicas entre todos
+```
+
+**Etapa 6: Criação das Etiquetas**
+```
+Sistema de tags para organização:
+  - Status (lead, cliente, ex-cliente)
+  - Interesse (produto A, B, C)
+  - Etapa do funil (topo, meio, fundo)
+  - Prioridade (alta, média, baixa)
+  - Origem (anúncio, orgânico, indicação)
+```
+
+**Etapa 7: Conexão com CRM/API**
+```
+☐ Mapeamento de campos
+☐ Configuração de webhooks
+☐ Autenticação de API
+☐ Testes de integração
+☐ Tratamento de erros
+☐ Logs e monitoramento
+```
+
+**Etapa 8: Eventos Personalizados**
+```
+☐ Rastreamento de conversões
+☐ Eventos de negócio (compra, agendamento)
+☐ Triggers customizados
+☐ Analytics configurado
+```
+
+**Etapa 9: Plugins Auxiliares**
+```
+☐ Plugin de agendamento (Calendly, etc)
+☐ Plugin de pagamento (se aplicável)
+☐ Plugin de localização
+☐ Plugin de arquivos
+☐ Outros conforme necessidade
+```
+
+**Etapa 10: Upload de Lista de Contatos**
+```
+☐ Preparar CSV formatado
+☐ Limpar e validar dados
+☐ Importar em lotes
+☐ Verificar importação
+☐ Segmentar automaticamente
+```
+
+#### 3.2 Engenharia de Prompt
+
+**Estrutura de Prompt por Agente:**
+
+```markdown
+# [NOME DO AGENTE]
+
+## 1. PERSONALIDADE E OBJETIVO
+Você é [nome/função]. Seu objetivo principal é [objetivo claro].
+
+Tom de voz: [profissional/amigável/consultivo/etc]
+Estilo: [formal/casual/técnico]
+
+## 2. HABILIDADES
+Você PODE:
+- [Habilidade 1]
+- [Habilidade 2]
+- [Habilidade 3]
+
+Você NÃO PODE:
+- [Restrição 1]
+- [Restrição 2]
+
+## 3. CONTEXTO DO NEGÓCIO
+[Informações sobre a empresa, produtos, serviços]
+
+## 4. FUNÇÕES DISPONÍVEIS
+Você tem acesso às seguintes funções:
+- consultar_produto(id): Busca informações detalhadas
+- criar_agendamento(data, hora): Agenda compromisso
+- [Outras funções]
+
+## 5. INFORMAÇÕES DE PRODUTOS/SERVIÇOS
+[Base de conhecimento inline ou referência]
+
+## 6. REGRAS DE COMPORTAMENTO
+- SEMPRE [comportamento obrigatório]
+- NUNCA [comportamento proibido]
+- QUANDO [situação], FAÇA [ação]
+
+## 7. ESCALAÇÃO
+Escale para humano quando:
+- [Situação 1]
+- [Situação 2]
+
+Use: escalate_to_human(motivo)
+```
+
+**Function Calls:**
+```json
+{
+  "name": "consultar_produto",
+  "description": "Busca informações detalhadas de um produto",
+  "parameters": {
+    "type": "object",
+    "properties": {
+      "produto_id": {
+        "type": "string",
+        "description": "ID do produto a consultar"
+      }
+    },
+    "required": ["produto_id"]
+  }
+}
+```
+
+**Variáveis do Sistema:**
+```
+{{user.first_name}} - Nome do usuário
+{{user.phone}} - Telefone
+{{user.email}} - Email
+{{bot.name}} - Nome do bot
+{{current_date}} - Data atual
+{{custom_field_X}} - Campos personalizados
+```
+
+#### 3.3 Testes e Validação
+
+**Investimento em Testes:** Mínimo US$ 10 em créditos OpenAI
+
+**Protocolo de Testes:**
+
+**Fase 1: Testes Unitários (2-3 dias)**
+```
+Para cada agente:
+  ☐ 100 perguntas variadas
+  ☐ Testar entendimento de intenção
+  ☐ Testar respostas adequadas
+  ☐ Testar function calls
+  ☐ Testar escalação
+  ☐ Testar casos extremos
+```
+
+**Fase 2: Testes de Integração (2-3 dias)**
+```
+☐ Testar transições entre agentes
+☐ Testar preservação de contexto
+☐ Testar integrações externas (API, CRM)
+☐ Testar disparos e automações
+☐ Testar banco de conhecimento
+☐ Documentar bugs encontrados
+```
+
+**Fase 3: Testes com Usuários (3-5 dias)**
+```
+☐ Selecionar 10 testadores internos
+☐ Criar roteiros de teste
+☐ Coletar feedback estruturado
+☐ Ajustar prompts conforme feedback
+☐ Documentar melhorias
+```
+
+**Fase 4: Homologação com Cliente (2-3 dias)**
+```
+☐ Apresentar sistema completo
+☐ Cliente testa principais fluxos
+☐ Ajustes finais conforme solicitação
+☐ Aprovação formal do cliente
+```
+
+**Fase 5: Soft Launch (3-5 dias)**
+```
+☐ Ativar para público limitado (10-20% da base)
+☐ Monitoramento intensivo 24/7
+☐ Correções rápidas de bugs críticos
+☐ Análise de performance
+☐ Go/No-Go para lançamento completo
+```
+
+**Fase 6: Lançamento Público**
+```
+☐ Ativar para 100% do público
+☐ Comunicar aos clientes/leads
+☐ Monitoramento contínuo primeira semana
+☐ Relatório de lançamento
+```
+
+---
+
+### FASE 4: ONBOARDING E TREINAMENTO (3-5 dias)
+
+#### 4.1 Apresentação Oficial
+
+**Reunião de Kickoff (2h)**
+
+**Participantes:**
+- Rafael Torquato (Estrategista)
+- Gestor de IA (Técnico)
+- Cliente (decisor + equipe operacional)
+- Cleiton/CS (Relacionamento)
+
+**Pauta:**
+```
+1. Apresentação da Equipe CRIA™ (10min)
+
+2. Overview do Projeto (20min)
+   - Objetivos e metas
+   - Agentes implementados
+   - Funcionalidades principais
+
+3. Demonstração Ao Vivo (40min)
+   - Fluxo de atendimento
+   - Cada agente em ação
+   - Integrações funcionando
+   - Dashboard de métricas
+
+4. Treinamento Básico (30min)
+   - Como usar o LiveChat
+   - Como intervir manualmente
+   - Como adicionar/remover tags
+   - Como acessar relatórios
+
+5. Documentação e Materiais (10min)
+   - PDF explicativo
+   - Vídeos tutoriais
+   - FAQ
+
+6. Próximos Passos (10min)
+   - Cronograma de manutenção
+   - Canais de suporte
+   - Expectativas primeiros 30 dias
+```
+
+#### 4.2 Materiais Entregues
+
+**PDF Explicativo "Manual do Cliente"**
+```
+Seções:
+1. Bem-vindo à IA CRIA™
+2. Como Funciona
+3. Seus Agentes de IA
+4. Como Usar o Sistema
+5. Como Solicitar Ajustes
+6. Relatórios e Métricas
+7. Suporte e Contatos
+8. FAQ
+```
+
+**Vídeos Tutoriais (5-7 vídeos de 3-5min cada)**
+```
+1. Overview do Sistema
+2. Como Acessar o Painel
+3. LiveChat: Como Intervir
+4. Sistema de Tags e Etiquetas
+5. Como Ler Relatórios
+6. Como Solicitar Alterações
+7. Dicas e Boas Práticas
+```
+
+#### 4.3 Integração Operacional
+
+**Inclusão de Colaboradores no Sistema**
+```
+☐ Criar acessos para equipe do cliente
+☐ Definir permissões por usuário
+☐ Treinamento individual de cada colaborador
+☐ Documentar responsabilidades
+```
+
+**Treinamento para Uso de Etiquetas**
+```
+☐ Sistema de tags explicado
+☐ Quando usar cada tag
+☐ Como criar novas tags
+☐ Automações com tags
+```
+
+**Apresentação do CRM Integrado**
+```
+☐ Como acessar dados de clientes
+☐ Como atualizar informações
+☐ Como usar filtros e segmentações
+☐ Como exportar relatórios
+```
+
+**Criação de Grupo de WhatsApp**
+```
+Grupo: "CRIA IA - [Nome Cliente]"
+
+Participantes:
+  - Rafael Torquato
+  - Cleiton (CS)
+  - Gestor de IA
+  - Cliente (stakeholders)
+
+Regras:
+  - Horário: Seg-Sex, 9h-18h
+  - Suporte emergencial: 24/7
+  - Tempo de resposta: < 2h úteis
+```
+
+**Apresentação de Relatórios**
+```
+Relatórios Disponíveis:
+  - Dashboard em tempo real
+  - Relatório diário (automático)
+  - Relatório semanal (automático)
+  - Relatório mensal executivo
+  - Relatórios personalizados sob demanda
+```
+
+#### 4.4 Gestão de Correções (Trello)
+
+**Estrutura do Board:**
+
+```
+📋 [Cliente] - Gestão CRIA IA
+
+BLOCO 01 - ESTRUTURA
+  ├─ Acessos e Credenciais
+  ├─ Passo a Passo (NÃO MEXER)
+  ├─ Links e Documentos
+  ├─ Informações da Empresa (Forms)
+  └─ Observações Importantes
+
+BLOCO 02 - BUGS E CORREÇÕES
+  ├─ Template de Bug Report
+  ├─ Bugs Reportados (com prints)
+  └─ Status de Correção
+
+BLOCO 03 - IDEIAS E MELHORIAS
+  ├─ Novos Fluxos Sugeridos
+  ├─ Novas Automações
+  ├─ Disparos Planejados
+  └─ Integrações Futuras
+
+BLOCO 04 - EXECUTADO (24-48h)
+  ├─ Bugs Críticos Corrigidos
+  └─ Ajustes Urgentes Implementados
+
+BLOCO 05 - EXECUTADO (3-7 dias)
+  ├─ Melhorias Implementadas
+  └─ Ajustes Não-Urgentes
+
+BLOCO 06 - BANCO DE IDEIAS
+  ├─ Ideias para Futuro
+  ├─ Features Avançadas
+  └─ Expansões Possíveis
+```
+
+---
+
+### FASE 5: MANUTENÇÃO CONTÍNUA
+
+#### Mês 1-3: Manutenção Intensiva
+
+**Frequência:** Semanal (7 em 7 dias)
+
+**Atividades:**
+```
+Segunda-feira:
+  ☐ Analisar demandas do Trello
+  ☐ Priorizar correções da semana
+  ☐ Planejar otimizações
+
+Quarta-feira:
+  ☐ Revisar performance de cada agente
+  ☐ Análise de conversas com I.A
+  ☐ Identificar padrões e melhorias
+
+Sexta-feira:
+  ☐ Implementar ajustes
+  ☐ Testar correções
+  ☐ Atualizar prompts
+  ☐ Gerar relatório semanal
+  ☐ Suporte via WhatsApp/Trello
+```
+
+**Análise de Conversas:**
+- Exportar últimas 100-200 conversas
+- Analisar com GPT-4 para insights
+- Identificar gaps de conhecimento
+- Ajustar prompts e banco de conhecimento
+
+**Otimizações:**
+- Corrigir mal-entendidos recorrentes
+- Adicionar novos casos ao banco
+- Melhorar function calls
+- Ajustar fluxos conforme uso real
+
+#### Mês 4-6: Manutenção Regular
+
+**Frequência:** Quinzenal (14 em 14 dias)
+
+**Atividades:**
+```
+Semana 1 (Segunda):
+  ☐ Análise quinzenal completa
+  ☐ Revisar KPIs
+  ☐ Implementar melhorias prioritárias
+
+Semana 2 (Sexta):
+  ☐ Armazenar mensagens para análise
+  ☐ Análise com I.A de padrões
+  ☐ Ajustes de agentes
+  ☐ Relatório quinzenal
+  ☐ Suporte contínuo
+```
+
+#### Mês 7-12: Manutenção Estável
+
+**Frequência:** Mensal (30 em 30 dias)
+
+**Atividades:**
+```
+Todo dia 5 do mês:
+  ☐ Revisão mensal completa
+  ☐ Análise de métricas (vs. mês anterior)
+  ☐ Armazenamento de conversas
+  ☐ Análise com I.A
+  ☐ Implementação de melhorias
+  ☐ Relatório executivo mensal
+  ☐ Reunião mensal com cliente
+  ☐ Planejamento próximo mês
+```
+
+---
+
+## 📊 KPIs E MÉTRICAS
+
+### Métricas de Performance
+
+**Eficiência do Atendimento:**
+- Tempo médio de resposta
+- Taxa de resolução sem humano
+- Tempo médio de resolução
+- Taxa de satisfação (CSAT)
+
+**Métricas de Conversão:**
+- Taxa de conversão geral
+- Taxa de conversão por agente
+- Custo por conversão
+- ROI do sistema
+
+**Métricas Operacionais:**
+- Volume de interações/dia
+- Horários de pico
+- Principais dúvidas/solicitações
+- Taxa de escalação para humano
+
+**Métricas Técnicas:**
+- Uptime do sistema
+- Latência média de resposta
+- Taxa de erro de API
+- Custo de tokens (OpenAI)
+
+### Metas por Plano
+
+**SENTINELA:**
+- Tempo de resposta: < 30 segundos
+- Taxa de resolução: > 60%
+- CSAT: > 4.0/5.0
+
+**GUARDIÃO:**
+- Tempo de resposta: < 20 segundos
+- Taxa de resolução: > 70%
+- CSAT: > 4.2/5.0
+- Taxa de conversão: > 15%
+
+**IA COMERCIAL 01:**
+- Tempo de resposta: < 15 segundos
+- Taxa de resolução: > 80%
+- CSAT: > 4.5/5.0
+- Taxa de conversão: > 25%
+- ROI: > 5x
+
+**PREMIUM:**
+- Tempo de resposta: < 10 segundos
+- Taxa de resolução: > 90%
+- CSAT: > 4.7/5.0
+- Taxa de conversão: > 35%
+- ROI: > 10x
+
+---
+
+## 🎓 EXPANSÕES E UPGRADES
+
+### Agentes Adicionais
+
+**Inclusão de Novo Agente WhatsApp:**
+- Setup: R$ 1.000
+- Recorrência: +R$ 697/mês
+- Prazo: 14-21 dias
+
+**Inclusão de Novo Agente Instagram:**
+- Setup: R$ 1.000
+- Recorrência: +R$ 697/mês
+- Prazo: 14-21 dias
+
+**Criação de GPT Personalizado:**
+- Investimento: R$ 697
+- Entrega: 7 dias
+- Uso: Ilimitado
+
+### Serviços Extras
+
+**Consultoria Estratégica:**
+- Análise profunda de dados
+- Otimizações avançadas
+- Novos casos de uso
+- Investimento: R$ 2.000/sessão
+
+**Treinamento de Equipe:**
+- Treinamento presencial
+- Workshop prático
+- Certificação CRIA™
+- Investimento: R$ 5.000/turma
+
+---
+
+## 📞 RESPONSÁVEIS
+
+**Rafael Torquato** - Estratégia e Comercial  
+**Cleiton** - CS e Relacionamento  
+**Gestor de IA** - Implantação e Manutenção  
+**Equipe Técnica** - Desenvolvimento e Suporte
+
+---
+
+## 📚 DOCUMENTOS RELACIONADOS
+
+- `guia_tecnico_nicochat.md`
+- `template_prompt_agente.md`
+- `checklist_implantacao.md`
+- `manual_cliente_ia.pdf`
+- `videos_tutoriais/`
+
+---
+
+**Versão:** 2.0  
+**Última Atualização:** 29/09/2025  
+**Próxima Revisão:** Trimestral
