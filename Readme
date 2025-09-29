@@ -1,0 +1,94 @@
+# 📚 REPOSITÓRIO DE PROCESSOS - THOR4TECH & CRIA™
+
+**Documentação Completa de Processos Operacionais**  
+**Última Atualização:** 29/09/2025  
+**Responsável:** Rafael Torquato
+
+---
+
+## 🎯 OBJETIVO
+
+Este repositório centraliza **TODOS os processos documentados** da Thor4Tech e CRIA™, garantindo:
+- ✅ Padronização de operações
+- ✅ Escalabilidade da equipe
+- ✅ Redução de retrabalho
+- ✅ Onboarding eficiente
+- ✅ Controle de qualidade
+
+---
+
+## 📂 ESTRUTURA DO REPOSITÓRIO
+
+### 01. IA DE ATENDIMENTO (CRIA™)
+- `passo_a_passo_estruturar_agente_ia.md` - Processo manual e automatizado
+- `processos_criacao_gpt_gestor_ia.md` - GPTs para gestão de IA
+- `prazos_implantacoes_processos.md` - Cronogramas e SLAs
+- `guia_completo_nicochat.md` - Manual técnico NicoChat
+
+### 02. TRÁFEGO PAGO (THOR4TECH)
+- `processo_trafego_pago_completo.md` - Do onboarding à otimização
+
+### 03. COMERCIAL
+- `processo_npc_novos_clientes.md` - Novo Processo de Clientes
+
+### 04. TEMPLATES
+- Templates de contratos, propostas e relatórios
+
+---
+
+## 🔄 FLUXO DE NOVOS PROCESSOS
+
+Quando criar um novo processo:
+
+1. **Criar arquivo .md** na pasta correspondente
+2. **Seguir estrutura padrão:**
+   ```markdown
+   # TÍTULO DO PROCESSO
+   **Versão:** X.X
+   **Data:** DD/MM/AAAA
+   **Responsável:** Nome
+   
+   ## Objetivo
+   ## Passo a Passo
+   ## Responsáveis
+   ## KPIs
+   ## Documentos Relacionados
+   ```
+3. **Atualizar este README**
+4. **Comunicar equipe**
+
+---
+
+## 📊 STATUS DOS PROCESSOS
+
+| Processo | Status | Versão | Última Rev. |
+|----------|--------|--------|-------------|
+| IA - Estruturação Agente | ✅ Completo | 1.0 | 29/09/2025 |
+| IA - GPTs Gestor | ✅ Completo | 1.0 | 29/09/2025 |
+| IA - Prazos | ✅ Completo | 1.0 | 29/09/2025 |
+| IA - NicoChat | ✅ Completo | 1.0 | 29/09/2025 |
+| Tráfego Pago | ✅ Completo | 1.0 | 29/09/2025 |
+| NPC Comercial | ✅ Completo | 1.0 | 29/09/2025 |
+
+---
+
+## 👥 RESPONSÁVEIS
+
+**Rafael Torquato** - CEO & Estratégia  
+**Gestor de IA** - Implantação técnica  
+**Gestor de Tráfego** - Campanhas e otimização  
+**CS/Cleiton** - Relacionamento com cliente
+
+---
+
+## 📞 CONTATO
+
+**Thor4Tech**
+- Site: www.thor4tech.com.br
+- Email: contato@thor4tech.com.br
+- WhatsApp: (11) 98047-0203
+
+---
+
+**Versão:** 1.0  
+**Próxima Revisão:** Trimestral
