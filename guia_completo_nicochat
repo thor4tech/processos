@@ -1,0 +1,826 @@
+# 🛠️ GUIA TÉCNICO NICOCHAT - CRIA™
+
+**Manual de Referência para Implantação**  
+**Versão:** 2.0  
+**Data:** 29/09/2025
+
+---
+
+## 📋 ÍNDICE
+
+1. [Visão Geral da Plataforma](#visão-geral)
+2. [Navegação e Interface](#navegação)
+3. [Omni-Channel](#omni-channel)
+4. [Gestão de Contatos](#contatos)
+5. [Templates do WhatsApp](#templates)
+6. [LiveChat](#livechat)
+7. [Quadros Kanban](#kanban)
+8. [Campos e Variáveis](#campos)
+9. [Estatísticas](#estatisticas)
+10. [Disparos e Eventos](#disparos)
+
+---
+
+## 🎯 VISÃO GERAL DA PLATAFORMA
+
+### O Que é o NicoChat
+
+Plataforma robusta para gestão de interações multicanal (WhatsApp, Instagram, Facebook, Telegram, etc) com foco em automação via IA, gestão de atendimentos e otimização de processos de vendas.
+
+### Capacidades Principais
+
+```
+✅ Chatbots com IA (OpenAI, Anthropic, etc)
+✅ Omni-channel (múltiplos canais em um bot)
+✅ LiveChat para atendimento humano
+✅ CRM simplificado (Kanban)
+✅ Automação de disparos
+✅ Integrações via API
+✅ Analytics e relatórios
+```
+
+---
+
+## 🧭 NAVEGAÇÃO E INTERFACE
+
+### Barra Lateral (Principais Seções)
+
+**Painel**
+- Visão geral do workspace
+- Atalhos rápidos
+- Links para comunidade e docs
+
+**Robôs**
+- Gerenciamento de canais
+- Criação de chatbots
+- Configuração de automações
+
+**Análise (Estatísticas)**
+- Métricas de performance
+- Relatórios customizados
+- Análise de conversas
+
+**Loja de Modelos**
+- Templates públicos
+- Publicação de modelos
+- Instalação de modelos prontos
+
+**Integrações**
+- Gerenciamento de números
+- Miniaplicativos instalados
+- Serviços de terceiros
+
+**Miniaplicativos**
+- Loja de plugins
+- Instalação de addons
+- Publicação de miniaplicativos
+
+**Comércio Eletrônico**
+- Sistema de e-commerce
+- Catálogo de produtos
+- Gestão de pedidos
+
+**Meu Conteúdo**
+- Modelos criados
+- Miniaplicativos próprios
+- Templates de email
+
+**Configurações**
+- Perfil do workspace
+- Gestão de membros
+- Configurações de canais
+
+**Cobrança**
+- Plano e assinatura
+- Status de uso
+- Histórico de pagamentos
+
+---
+
+## 🌐 OMNI-CHANNEL
+
+### Conceito
+
+Criar **um único bot** para gerenciar múltiplos canais de comunicação simultaneamente, centralizando todas as conversas em uma interface unificada.
+
+### Criação de Bot Omni-Channel
+
+**Opção 1: Criar do Zero**
+```
+1. Acessar "Robôs"
+2. Clicar em "Criar Bot Omni-Channel"
+3. Nomear o bot
+4. Selecionar canais desejados
+5. Configurar cada canal
+```
+
+**Opção 2: Converter Bot Existente**
+```
+1. Acessar bot existente
+2. Configurações → Converter para Omni-Channel
+3. Importar usuários (opcional)
+4. Conectar novos canais
+```
+
+### Fluxos Omni-Channel
+
+#### Condições por Canal
+
+Usar condições no construtor de fluxo para adaptar respostas por canal:
+
+```
+SE canal = "facebook_messenger"
+  → Enviar cartão visual
+SENÃO SE canal = "telegram"
+  → Enviar texto simples (não suporta cartões)
+```
+
+#### Suporte de Recursos
+
+O NicoChat indica quais recursos cada canal suporta através de ícones nos blocos do construtor de fluxo.
+
+**Recursos Comuns:**
+- ✅ Texto: Todos os canais
+- ✅ Imagens: Todos os canais
+- ⚠️ Cartões visuais: Messenger, WhatsApp (limitado)
+- ⚠️ Botões: Alguns canais
+- ❌ Localização: Poucos canais
+
+---
+
+## 👥 GESTÃO DE CONTATOS
+
+### Usuários de Bot (Contatos)
+
+Todos que interagem com o chatbot são registrados como "Usuários de Bot" (contatos).
+
+### Informações Coletadas
+
+**Dados Básicos (automáticos):**
+- Nome e sobrenome
+- Gênero (se fornecido)
+- Idioma
+- Fuso horário
+- ID de usuário do canal
+- Data de inscrição
+- Última interação
+
+**Dados Customizados:**
+- Campos personalizados criados
+- Tags e etiquetas aplicadas
+- Histórico de conversas
+- Interações registradas
+
+### Campos de Usuário Personalizados
+
+**Criar Campo:**
+```
+1. Acessar "Conteúdo" → "Campos do Usuário"
+2. Clicar em "Criar Campo"
+3. Definir:
+   - Nome do campo
+   - Tipo (texto, número, data, boolean, JSON)
+   - Descrição
+4. Salvar
+```
+
+**Tipos de Dados:**
+- `text` - Texto livre
+- `number` - Numérico
+- `boolean` - Verdadeiro/Falso
+- `date` - Data (YYYY-MM-DD)
+- `datetime` - Data e hora
+- `json` - Objeto JSON
+
+**Uso em Fluxos:**
+```
+Salvar resposta em campo:
+  {{user.custom_field_email}}
+  
+Exibir valor de campo:
+  Olá {{user.first_name}}, seu email é {{user.custom_field_email}}
+```
+
+### Tags e Etiquetas
+
+**Sistema de Categorização:**
+```
+Status:
+  - lead
+  - cliente
+  - ex-cliente
+  
+Interesse:
+  - produto_a
+  - produto_b
+  - produto_c
+  
+Etapa do Funil:
+  - topo
+  - meio
+  - fundo
+  
+Prioridade:
+  - alta
+  - media
+  - baixa
+```
+
+**Adicionar Tag via Fluxo:**
+```
+Bloco "Ação" → "Adicionar Tag"
+Tag: cliente_vip
+```
+
+**Filtrar por Tags:**
+```
+Acessar "Usuários de Bot"
+Filtrar por: Tag = "cliente_vip"
+```
+
+### Importação de Contatos
+
+**Para canais SMS e Voz:**
+```
+1. Preparar CSV com colunas:
+   - phone (obrigatório)
+   - first_name
+   - last_name
+   - custom_field_X
+   
+2. Acessar canal → Importar
+3. Upload do CSV
+4. Mapear colunas
+5. Importar
+```
+
+---
+
+## 📱 TEMPLATES DO WHATSAPP
+
+### Conceito
+
+Mensagens pré-aprovadas pelo WhatsApp para envio fora da janela de 24h de atendimento.
+
+### Criação de Templates
+
+**Opção 1: No Meta Business Manager**
+```
+1. Acessar Meta Business Manager
+2. Criar template
+3. Aguardar aprovação
+4. Sincronizar no NicoChat
+```
+
+**Opção 2: Direto no NicoChat**
+```
+1. Acessar Canal WhatsApp → Templates
+2. Clicar "Criar Novo"
+3. Preencher:
+   - Nome do template
+   - Categoria (marketing, transacional, etc)
+   - Idioma
+   - Conteúdo (header, body, footer, buttons)
+4. Enviar para aprovação
+5. Aguardar aprovação WhatsApp (até 48h)
+```
+
+### Estrutura de Template
+
+```
+[HEADER] (opcional)
+  - Texto ou Mídia (imagem, vídeo, documento)
+  
+[BODY] (obrigatório)
+  - Texto principal
+  - Suporta variáveis: {{1}}, {{2}}, etc
+  
+[FOOTER] (opcional)
+  - Texto pequeno no rodapé
+  
+[BUTTONS] (opcional)
+  - Até 3 botões de ação
+  - Tipos: Call-to-action, Quick Reply
+```
+
+### Uso de Variáveis
+
+**No Template:**
+```
+Olá {{1}}, sua consulta está agendada para {{2}} às {{3}}.
+```
+
+**No Envio:**
+```
+Variável 1: {{user.first_name}}
+Variável 2: {{appointment.date}}
+Variável 3: {{appointment.time}}
+
+Resultado:
+"Olá Rafael, sua consulta está agendada para 15/10/2025 às 14:00."
+```
+
+### Sincronização
+
+```
+Canal WhatsApp → Templates → Sincronizar
+```
+
+Isso traz todos os templates do Meta Business Manager para o NicoChat.
+
+---
+
+## 💬 LIVECHAT
+
+### Conceito
+
+Interface para **atendimento humano** em tempo real, complementando a automação dos chatbots.
+
+### Acesso
+
+**Opção 1:** Painel principal → LiveChat (todos os canais)  
+**Opção 2:** Canal específico → LiveChat
+
+### Interface do LiveChat
+
+**Seção 1: Lista de Assinantes**
+```
+Exibe:
+  - Usuários que interagiram
+  - Status: Caixa de entrada / Concluído
+  - Pesquisa por nome
+  - Filtros (tags, campos)
+```
+
+**Seção 2: Histórico de Conversa**
+```
+Exibe:
+  - Todas as mensagens (bot + humano)
+  - Opção: Ocultar mensagens do bot
+  - Timestamps
+  - Indicadores de leitura
+```
+
+**Seção 3: Resposta do Agente**
+```
+Recursos:
+  - Editor de texto rico
+  - Atalhos (respostas prontas)
+  - Variáveis {{user.field}}
+  - Emojis
+  - Envio de mídia (imagem, áudio, vídeo, arquivo)
+  - Envio de subfluxos
+  - Modo: Responder ou Nota (interna)
+```
+
+**Seção 4: Perfil do Usuário**
+```
+Exibe:
+  - Dados básicos
+  - Foto de perfil
+  - Informações de contato
+  - Campos personalizados
+```
+
+**Seção 5: Informações Adicionais**
+```
+Exibe:
+  - Notas internas
+  - Tags aplicadas
+  - Sequências inscritas
+  - Tópicos OTN (notificações)
+  - Todos os campos personalizados
+  
+Ações:
+  - Adicionar/remover tags
+  - Editar campos
+  - Adicionar notas
+```
+
+### Atalhos (Respostas Rápidas)
+
+**Criar Atalho:**
+```
+1. LiveChat → Configurações → Atalhos
+2. Criar novo:
+   - Nome do atalho (ex: /saudacao)
+   - Texto da resposta
+   - Pode usar variáveis
+3. Salvar
+```
+
+**Usar Atalho:**
+```
+Na caixa de resposta, digitar /saudacao
+Sistema substitui pelo texto completo
+```
+
+### Modo Chat Ativo
+
+**Quando ativar:**
+- Usuário solicitou falar com humano
+- Situação complexa que requer intervenção
+- Bot escalou para atendente
+
+**Quando desativar:**
+- Após resolver a situação
+- Antes de enviar usuário para subfluxo
+- Para permitir que bot reassuma
+
+**IMPORTANTE:** Desative o modo chat ao enviar usuário para subfluxo, senão o bot não conseguirá responder.
+
+---
+
+## 📊 QUADROS KANBAN (PIPELINE)
+
+### Conceito
+
+CRM visual tipo Trello para gerenciar usuários através de estágios de um funil de vendas ou processo.
+
+### Estrutura
+
+```
+┌────────────┬────────────┬────────────┬────────────┐
+│ Novo Lead  │ Contatado  │ Proposta   │ Fechado    │
+├────────────┼────────────┼────────────┼────────────┤
+│ [Usuário1] │ [Usuário3] │ [Usuário5] │ [Usuário7] │
+│ [Usuário2] │ [Usuário4] │ [Usuário6] │ [Usuário8] │
+└────────────┴────────────┴────────────┴────────────┘
+```
+
+### Criar Quadro
+
+```
+1. Acessar "Kanban" → "Criar Quadro"
+2. Definir nome
+3. Criar colunas (até 20):
+   - Nome da coluna
+   - Descrição
+   - Ordem
+4. Salvar
+```
+
+### Mover Usuários
+
+**Via Construtor de Fluxo:**
+```
+Bloco "Ação" → "Mover para Coluna do Kanban"
+Coluna: "Proposta Enviada"
+Nota: "Proposta de R$ 5.000 enviada em {{current_date}}"
+```
+
+**Via LiveChat:**
+```
+No perfil do usuário → "Estágio no Pipeline"
+Selecionar nova coluna
+Adicionar nota (opcional)
+```
+
+**Em Massa:**
+```
+Usuários de Bot → Filtrar usuários
+Selecionar múltiplos
+Ações em massa → Mover para coluna
+```
+
+### Casos de Uso
+
+**Pipeline de Vendas:**
+```
+Lead Novo → Qualificado → Demo Agendada → Proposta → Negociação → Ganho/Perdido
+```
+
+**Suporte ao Cliente:**
+```
+Novo Ticket → Em Análise → Em Progresso → Aguardando Cliente → Resolvido
+```
+
+**Onboarding:**
+```
+Novo Cliente → Dados Coletados → Configuração → Treinamento → Ativo
+```
+
+---
+
+## 🔧 CAMPOS E VARIÁVEIS
+
+### Tipos de Campos
+
+**1. Campo do Sistema**
+```
+Predefinidos pelo NicoChat:
+  {{user.id}} - ID do usuário
+  {{user.first_name}} - Nome
+  {{user.last_name}} - Sobrenome
+  {{user.phone}} - Telefone
+  {{user.channel_user_id}} - ID no canal
+  {{current_date}} - Data atual
+  {{current_time}} - Hora atual
+```
+
+**2. Campo do Bot**
+```
+Compartilhados por todo o bot:
+  {{bot.name}} - Nome do bot
+  {{bot.address}} - Endereço da empresa
+  {{bot.phone}} - Telefone da empresa
+  {{bot.custom_field_X}} - Campos customizados
+```
+
+**3. Campo do Usuário**
+```
+Específicos de cada usuário:
+  {{user.custom_field_email}}
+  {{user.custom_field_cpf}}
+  {{user.custom_field_interesse}}
+```
+
+### Criar Campo Personalizado
+
+**Via Interface:**
+```
+1. Conteúdo → Campos do Usuário (ou Campos do Bot)
+2. Criar Novo Campo
+3. Definir:
+   - Nome (sem espaços, use underscore)
+   - Tipo (text, number, date, boolean, json)
+   - Descrição
+4. Salvar
+```
+
+**Via Construtor de Fluxo:**
+```
+No bloco "Pergunta" ou "Ação":
+  Criar novo campo diretamente
+  Sistema cria automaticamente
+```
+
+### Uso de Variáveis
+
+**Salvar dados:**
+```
+Bloco "Pergunta":
+  Pergunta: "Qual é o seu email?"
+  Salvar resposta em: {{user.custom_field_email}}
+```
+
+**Exibir dados:**
+```
+Bloco "Texto":
+  "Obrigado, {{user.first_name}}! 
+   Seu email {{user.custom_field_email}} foi registrado."
+```
+
+**Condições:**
+```
+Bloco "Condição":
+  SE {{user.custom_field_interesse}} = "produto_a"
+    → Enviar para subfluxo_produto_a
+  SENÃO
+    → Continuar fluxo padrão
+```
+
+---
+
+## 📈 ESTATÍSTICAS
+
+### Dashboard Principal
+
+**Métricas Disponíveis:**
+```
+Usuários:
+  - Total de usuários
+  - Novos usuários (período)
+  - Usuários ativos
+  
+Mensagens:
+  - Total de mensagens
+  - Mensagens enviadas
+  - Mensagens recebidas
+  - Taxa de resposta
+  
+Conversas:
+  - Total de conversas
+  - Conversas iniciadas
+  - Conversas concluídas
+  - Tempo médio de conversa
+  
+Performance:
+  - Taxa de sucesso de fluxos
+  - Pontos de abandono
+  - Horários de pico
+```
+
+### Análise de Agente (LiveChat)
+
+**Métricas de Atendentes:**
+```
+Produtividade:
+  - Conversas atendidas
+  - Tempo médio de resposta
+  - Tempo médio de atendimento
+  - Conversas simultâneas (média)
+  
+Qualidade:
+  - Satisfação do cliente (CSAT)
+  - Taxa de resolução
+  - Taxa de escalação
+  
+Disponibilidade:
+  - Tempo online
+  - Tempo em atendimento
+  - Tempo ocioso
+```
+
+### Filtros
+
+**Período:**
+- Hoje
+- Ontem
+- Últimos 7 dias
+- Últimos 30 dias
+- Personalizado (range de datas)
+
+**Segmentação:**
+- Por canal
+- Por bot
+- Por agente
+- Por tag
+- Por campo personalizado
+
+### Exportação
+
+```
+Dashboard → Exportar
+Formatos:
+  - PDF (relatório visual)
+  - CSV (dados brutos)
+  - Excel (planilha)
+```
+
+---
+
+## 🚀 DISPAROS E EVENTOS
+
+### Tipos de Disparos
+
+**1. Disparo Manual**
+```
+Enviar mensagem para lista específica uma vez
+Uso: Promoções, avisos, comunicados
+```
+
+**2. Disparo Agendado**
+```
+Agendar envio para data/hora futura
+Uso: Lembretes, follow-ups planejados
+```
+
+**3. Disparo Recorrente**
+```
+Envio automático em intervalo definido
+Uso: Newsletters, reports periódicos
+```
+
+**4. Disparo por Evento**
+```
+Acionado por ação específica do usuário
+Uso: Automações de funil
+```
+
+### Criar Disparo
+
+**Via Interface:**
+```
+1. Robôs → [Bot] → Disparos
+2. Criar Novo Disparo
+3. Configurar:
+   - Nome
+   - Tipo de disparo
+   - Público-alvo (tags, filtros)
+   - Template ou mensagem
+   - Data/hora (se agendado)
+4. Ativar
+```
+
+**Via Construtor de Fluxo:**
+```
+Bloco "Ação" → "Inscrever em Sequência"
+Sequência: disparo_follow_up_7dias
+```
+
+### Segmentação de Público
+
+**Filtros Disponíveis:**
+```
+Por Tags:
+  - Tem tag: cliente_vip
+  - Não tem tag: ex-cliente
+  
+Por Campos:
+  - Campo X = valor
+  - Campo Y > valor
+  - Campo Z contém texto
+  
+Por Comportamento:
+  - Última interação < 30 dias
+  - Concluiu fluxo X
+  - Não respondeu disparo Y
+  
+Por Canal:
+  - Canal = WhatsApp
+  - Canal = Instagram
+```
+
+### Eventos Personalizados
+
+**Criar Evento:**
+```
+1. Construtor de Fluxo → Disparos
+2. Criar Novo Evento
+3. Definir:
+   - Nome do evento
+   - Condições de acionamento
+   - Fluxo a iniciar
+4. Ativar
+```
+
+**Exemplos:**
+```
+Evento: "Carrinho Abandonado"
+  Condição: Campo "carrinho_status" = "pendente"
+            E última_interacao > 2 horas
+  Ação: Enviar template "lembrete_carrinho"
+  
+Evento: "Cliente Inativo"
+  Condição: Última_interacao > 30 dias
+            E tag = "cliente"
+  Ação: Iniciar fluxo "reativacao"
+```
+
+### Boas Práticas
+
+```
+✅ Sempre usar templates aprovados para WhatsApp
+✅ Respeitar janela de 24h do WhatsApp
+✅ Segmentar bem para evitar spam
+✅ Testar com grupo pequeno primeiro
+✅ Monitorar taxa de opt-out
+✅ Permitir fácil descadastramento
+```
+
+---
+
+## 🎓 RECURSOS AVANÇADOS
+
+### Integrações via Webhook
+
+**Enviar dados para sistema externo:**
+```
+Bloco "Ação Avançada" → "Webhook"
+URL: https://seucrm.com/api/contato
+Método: POST
+Body: {
+  "nome": "{{user.first_name}}",
+  "email": "{{user.custom_field_email}}",
+  "telefone": "{{user.phone}}"
+}
+```
+
+**Receber dados de sistema externo:**
+```
+Configurações do Bot → Webhooks
+Criar endpoint
+URL gerada: https://nicochat.io/webhook/seu-bot
+Usar em integrações externas
+```
+
+### Miniaplicativos Úteis
+
+**Calendly** - Agendamentos  
+**Stripe** - Pagamentos  
+**Google Sheets** - Planilhas  
+**Zapier/Make** - Automações  
+**Shopify** - E-commerce
+
+### APIs Disponíveis
+
+**OpenAI** - Agentes de IA  
+**Anthropic (Claude)** - Agentes de IA  
+**Google Dialogflow** - NLU  
+**ChatGPT** - Conversação
+
+---
+
+## 📞 SUPORTE
+
+**Documentação Oficial:** docs.nicochat.io  
+**Comunidade:** community.nicochat.io  
+**YouTube:** NicoChat Official  
+**Email:** support@nicochat.io
+
+---
+
+**Versão:** 2.0  
+**Última Atualização:** 29/09/2025  
+**Próxima Revisão:** Trimestral
